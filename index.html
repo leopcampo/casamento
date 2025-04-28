@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <title>Presentes de Casamento - Leonardo & Marcelle</title>
   <style>
     body {
@@ -82,7 +83,17 @@
       <img src="https://via.placeholder.com/300x200?text=Liquidificador" alt="Liquidificador" />
       <h3>Liquidificador</h3>
       <p>R$ 200,00</p>
-      <button>Quero Presentear</button>
+      <div class="w3-container">
+      <button onclick="document.getElementById('id01').style.display='block'">Quero Presentear</button>
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <p>Inserir o pix aqui</p>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
     <div class="gift-card">
       <img src="https://via.placeholder.com/300x200?text=Jogo+de+Pratos" alt="Jogo de Pratos" />
@@ -98,6 +109,8 @@
     </div>
     <!-- Adicione mais itens aqui -->
   </section>
+
+  
 
 </body>
 </html>
